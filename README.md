@@ -1,30 +1,51 @@
-# 🧠 Next Word Prediction with GPT Tokenization
+ 🧠 LLM Engineering Journey
 
-This repository is part of my **LLM Engineering Journey**, where I document hands-on projects every week to build job-ready skills in Natural Language Processing and Large Language Models.
+Welcome to my repository where I document weekly hands-on projects to build job-ready skills in **Natural Language Processing** and **Large Language Models (LLMs)**.
 
-## 📁 Project: Next Word Prediction with GPT Tokenization
+ 📂 Projects
+1. Next Word Prediction with GPT Tokenization  
+**Folder:** `next_word_prediction/`  
+In this project, I:  
+- Explored Hugging Face `datasets` and `transformers`  
+- Loaded and preprocessed the AG News dataset  
+- Worked through a simple next-word prediction task using GPT tokenization  
+- Set up my development environment and GitHub workflow  
 
-In this notebook:
-- ✅ Explored Hugging Face `datasets` and `transformers`
-- ✅ Loaded and preprocessed the AG News dataset
-- ✅ Worked through a simple next-word prediction task using GPT tokenization
-- ✅ Set up my development environment and GitHub project workflow
+---
+2. Saving & Loading GPT Model Weights  
+**Folder:** `save_load_gpt/`  
+In this project, I:  
+- Loaded GPT-2 with Hugging Face Transformers  
+- Ran inference on dummy text input  
+- Saved model weights using `torch.save(model.state_dict())`  
+- Recreated a fresh model instance and loaded saved weights  
+- Verified outputs remained identical before and after loading  
+- Checkpointed model and optimizer states with PyTorch  
 
-## 🛠️ Tech Stack
-- Python
-- PyTorch
-- Hugging Face Transformers & Datasets
-- Jupyter Notebook
-- Git & GitHub
+This strengthens understanding of model persistence critical for LLM fine-tuning and sharing.
 
-## 📚 Purpose
-Build the foundations of LLMs by understanding:
-- How datasets are loaded and tokenized
-- How token-level prediction works
-- How to use notebooks for quick prototyping
+---
+##🛠️ Tech Stack
+
+- Python  
+- PyTorch  
+- Hugging Face Transformers & Datasets  
+- Jupyter Notebook  
+- Git & GitHub  
+
+---
+
+## 📚 Learning Goals
+
+- Understand dataset loading and tokenization  
+- Learn token-level prediction in LLMs  
+- Master saving and loading model weights  
+- Use notebooks for fast experimentation  
+
+---
 
 ## 🌍 About Me
 
-I'm Brian, an aspiring LLM engineer from Kenya working through weekly challenges and projects . Follow my journey here: [github.com/Okoth67](https://github.com/Okoth67)
+I'm **Brian**, an aspiring LLM engineer from **Kenya**, progressing through weekly challenges and projects.
 
----
+📌 Follow my journey: [github.com/Okoth67](https://github.com/Okoth67)
