@@ -1,51 +1,67 @@
- 🧠 LLM Engineering Journey
+ 🧠 LLM Engineering - Preparing GPT-2 for Classification: Data Loading, Tokenization, and Model Setup
 
-Welcome to my repository where I document weekly hands-on projects to build job-ready skills in **Natural Language Processing** and **Large Language Models (LLMs)**.
+This repository documents my weekly hands-on learning as I build practical skills in Natural Language Processing (NLP) and Large Language Models (LLMs), focusing on preparing and fine-tuning GPT-2 models.
 
- 📂 Projects
-1. Next Word Prediction with GPT Tokenization  
-**Folder:** `next_word_prediction/`  
-In this project, I:  
-- Explored Hugging Face `datasets` and `transformers`  
-- Loaded and preprocessed the AG News dataset  
-- Worked through a simple next-word prediction task using GPT tokenization  
-- Set up my development environment and GitHub workflow  
+📂 Projects This Week
+Initializing GPT-2 for Sequence Classification
+File: run_classifier.py
 
----
-2. Saving & Loading GPT Model Weights  
-**Folder:** `save_load_gpt/`  
-In this project, I:  
-- Loaded GPT-2 with Hugging Face Transformers  
-- Ran inference on dummy text input  
-- Saved model weights using `torch.save(model.state_dict())`  
-- Recreated a fresh model instance and loaded saved weights  
-- Verified outputs remained identical before and after loading  
-- Checkpointed model and optimizer states with PyTorch  
+Loaded the IMDb dataset and prepared sample text-label pairs
 
-This strengthens understanding of model persistence critical for LLM fine-tuning and sharing.
+Initialized GPT-2 with a sequence classification head (GPT2ForSequenceClassification) for binary sentiment classification
 
----
-##🛠️ Tech Stack
+Built a PyTorch Dataset class and DataLoader to tokenize and batch the text inputs
 
-- Python  
-- PyTorch  
-- Hugging Face Transformers & Datasets  
-- Jupyter Notebook  
-- Git & GitHub  
+Set up the training loop skeleton with optimizer and scheduler — training not yet performed
 
----
+Implemented a basic inference method to test model outputs on sample inputs
+This work lays the groundwork to fine-tune GPT-2 on classification tasks by adapting its architecture and preparing data pipelines.
 
-## 📚 Learning Goals
+Notebook: dataloader.ipynb
+Practiced creating custom PyTorch datasets and dataloaders for text data, focusing on tokenization and padding — critical for efficient batch processing.
 
-- Understand dataset loading and tokenization  
-- Learn token-level prediction in LLMs  
-- Master saving and loading model weights  
-- Use notebooks for fast experimentation  
+Notebook: downloading_and_processing_dataset.ipynb
+Explored loading datasets using Hugging Face datasets library and preparing raw text for tokenization. Proper data preparation ensures models receive well-formatted inputs.
 
----
+Notebook: gpt2.ipynb
+Investigated GPT-2 tokenizer behavior and model loading to understand tokenization mechanics and model architecture.
 
-## 🌍 About Me
+Notebook: saving_loading_weights.ipynb
+Learned saving and loading PyTorch model weights using torch.save() and load_state_dict(), foundational for checkpointing models during training.
 
-I'm **Brian**, an aspiring LLM engineer from **Kenya**, progressing through weekly challenges and projects.
+Notebook: loading_and_saving_openai_weights.ipynb
+Experimented with loading OpenAI GPT model weights into Hugging Face’s GPT-2 format and saving them, expanding compatibility between model formats.
 
-📌 Follow my journey: [github.com/Okoth67](https://github.com/Okoth67)
+Notebook: initializing_model_for_finetuning.ipynb
+Focused on preparing pretrained GPT-2 models for downstream tasks by adding classification heads and configuring tokenizers (e.g., setting pad tokens).
+
+🛠️ Tech Stack
+Python
+
+PyTorch
+
+Hugging Face Transformers & Datasets
+
+Jupyter Notebooks
+
+Git & GitHub
+
+📚 Learning Goals
+Understand dataset loading and preprocessing for NLP
+
+Prepare and tokenize text inputs for GPT-2 fine-tuning
+
+Initialize GPT-2 with classification heads suitable for sentiment analysis
+
+Build efficient PyTorch data pipelines for NLP tasks
+
+Manage model weights for saving and loading
+
+Setup training and inference code structures for future fine-tuning experiments
+
+🌍 About Me
+I’m Brian, an aspiring LLM engineer from Kenya, documenting my progress as I gain practical skills in NLP and large language models through structured weekly projects.
+
+📌 Follow my progress: github.com/Okoth67
+
+
